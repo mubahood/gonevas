@@ -154,7 +154,7 @@ public class RegisterActivity extends AppCompatActivity {
         };
 
         final String[] array_phone_codes = new String[]{
-                "225", "223", "231", "224", "226", "233", "880"
+                "225", "223", "231", "224", "226", "233", "880"  //simple change
         };
 
 
