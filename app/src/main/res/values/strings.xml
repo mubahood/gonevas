@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Gonevas</string>
+    <string name="title_home">Home</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_search">Search</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_account">Account</string>
+    <string name="product_name_1">Frameless Case For Samsung Galaxy A20 Transparent Frosted Hard Case - Blue</string>
+    <string name="coup_hoodie_jacket">Coup Hoodie Jacket</string>
+    <string name="green_m">Green - M</string>
+    <string name="_89_00">$ 89.00</string>
+    <string name="first_name">PRÉNOM</string>
+    <string name="last_name">NOM DE FAMILLE</string>
+    <string name="country">PAYS</string>
+    <string name="city">VILLE</string>
+    <string name="full_address">ADRESSE COMPLÈTE</string>
+    <string name="create_account">CRÉER UN COMPTE</string>
+    <string name="first_name_too_short">Prénom trop court</string>
+    <string name="last_name_too_short">Nom trop court</string>
+    <string name="email_too_short">Adresse e-mail trop courte</string>
+    <string name="phone_numer_too_short">Numéro de téléphone trop court</string>
+    <string name="country_too_short">Pays trop court</string>
+    <string name="city_too_name">ville trop courte</string>
+    <string name="address_too_short">Adresse trop courte</string>
+    <string name="phone">PHONE</string>
+    <string name="phone_number">NUMÉRO DE TÉLÉPHONE</string>
+    <string name="confirm_this_is_your_number">Veuillez confirmer qu\'il s\'agit de votre numéro de téléphone avant de continuer.</string>
+    <string name="confirm_number">CONFIRMER LE NUMÉRO</string>
+    <string name="enter_phone_verification_code">Veuillez entrer le numéro de téléphone envoyé à votre téléphone dans l\'espace ci-dessous. Si vous ne l\'avez pas reçu, attendez au moins 2 minutes avant d\'en demander un autre.</string>
+    <string name="enter_code_here">CODE</string>
+    <string name="v_rifier_le_code">VÉRIFIER LE CODE</string>
+    <string name="NEXT">SUIVANTE</string>
+    <string name="state">l\' État</string>
+    <string name="contact_details">DÉTAILS DU CONTACT</string>
+    <string name="center_correct_state">Enter correct state</string>
+    <string name="shipping_to">SHIPPING TO:</string>
+    <string name="cash_on_delivery">Paiement à la livraison</string>
+    <string name="request_another_code">Demander un autre code</string>
+    <string name="wait_for_two_minutes">Attendez au moins 2 minutes avant de demander un autre code.</string>
+    <string name="are_you_sure_request_another_code">Voulez-vous vraiment demander un autre code de vérification?</string>
+    <string name="request_another_code_">CODE REQUIS</string>
+    <string name="wrong_code">Code de vérification incorrect</string>
+    <string name="success_phone_verification">Succès! Téléphone vérifié.</string>
+    <string name="verify_phone_number_first">Vérifiez d\'abord votre téléphone.</string>
+    <string name="password_too_short">Mot de passe trop court</string>
+    <string name="acc_created_successfully">Votre compte a été créé avec succès!</string>
+    <string name="poor_network">Mauvais réseau. Veuillez réessayer</string>
+    <string name="cahenge_phone">changeChnage numéro de téléphone</string>
+    <string name="change_number_asasuarance">Voulez-vous vraiment changer de numéro de téléphone?</string>
+    <string name="change">Changement</string>
+    <string name="name">Nom</string>
+    <string name="email_address">Adresse e-mail</string>
+    <string name="shipping_address">ADRESSE DE LIVRAISON</string>
+    <string name="extra_message">Message supplémentaire</string>
+    <string name="enter_your_message_here">Entrez votre message ici ...</string>
+    <string name="shipping">livraison</string>
+    <string name="payment">Paiement</string>
+    <string name="confirm">Confirmer</string>
+    <string name="note_shipping_price_may_slightly_change_according_to_your_shipping_address">REMARQUE: le prix de livraison peut légèrement changer en fonction de votre adresse de livraison.</string>
+    <string name="order_total">Total de la commande</string>
+    <string name="tag_line">Vos achats en toute simplicité!</string>
+    <string name="login">S\'IDENTIFIER</string>
+    <string name="you_must_first_verify_your_phone_number_before_you_create_a_goneva_s_account">Vous devez d\'abord vérifier votre numéro de téléphone avant de créer un compte Goneva.</string>
+    <string name="my_orders">Mes commandes</string>
+    <string name="search_for_anything">Cherchez quoi que ce soit ...</string>
+    <string name="latest_collection">Dernière collection</string>
+    <string name="please_try_another_keyword">Veuillez essayer un autre mot-clé</string>
+    <string name="no_results">Aucun résultat</string>
+    <string name="OK">OK</string>
+    <string name="CANCEL">ANNULER</string>
+    <string name="GOT_IT">JE L\'AI</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="related_products">Produits connexes</string>
+    <string name="product_details">Détails du produit</string>
+    <string name="add_to_cart">Ajouter au chariot</string>
+    <string name="login_before_you_proceed">Connectez-vous avant de continuer</string>
+    <string name="my_dashboard">Mon tableau de bord</string>
+    <string name="logout">Se déconnecter</string>
+
+</resources>

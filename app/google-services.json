@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "408953804227",
+    "firebase_url": "https://gonevas-a985e.firebaseio.com",
+    "project_id": "gonevas-a985e",
+    "storage_bucket": "gonevas-a985e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408953804227:android:1b86b577f285827b691976",
+        "android_client_info": {
+          "package_name": "gonevas.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408953804227-ubg91blak2qavqesb26qq9gng7jbqqf1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gonevas.com",
+            "certificate_hash": "8b9287528d5d32fe4b63f58740dec87419312c24"
+          }
+        },
+        {
+          "client_id": "408953804227-kn162pgmifgdeu9c1uvv0q7t6tjdil79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8WVFZtU1-dOyXRPLz5kAX9VdqpLUHP0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408953804227-kn162pgmifgdeu9c1uvv0q7t6tjdil79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

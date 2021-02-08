@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "gonevas.com"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.firebase:firebase-firestore:21.5.0' 
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    // third party dependencies -------------------------------------------------------------------
+    implementation 'com.balysv:material-ripple:1.0.2'               // ripple effect
+    implementation 'com.github.smarteist:autoimageslider:1.3.9'     //Image Slider
+    implementation 'com.github.bumptech.glide:glide:4.11.0'         // glide library
+    implementation 'de.hdodenhof:circleimageview:3.1.0'             // circle image view
+    implementation 'com.google.android:flexbox:0.3.2'               // google flexible box
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.jsibbold:zoomage:1.3.1'                     //zooming image
+
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'          //http library
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'    //coverter
+
+
+    //room
+    implementation 'androidx.room:room-runtime:2.2.5'               //database
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'         //database
+
+    implementation 'org.sufficientlysecure:html-textview:3.9'       //html view
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'          // circle image view
+    implementation 'com.google.android.material:material:1.2.0'
+}

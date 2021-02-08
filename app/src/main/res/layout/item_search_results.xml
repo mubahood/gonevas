@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBarSize"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:clickable="true"
+    android:elevation="0dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/spacing_large"
+    android:paddingRight="@dimen/spacing_large">
+
+    <TextView
+        android:id="@+id/search_key_word"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableRight="@drawable/icon_search"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/spacing_medium"
+        android:text="Search keyword"
+        android:textColor="@color/grey_900"
+        android:textSize="16dp" />
+
+
+</LinearLayout>
+
+

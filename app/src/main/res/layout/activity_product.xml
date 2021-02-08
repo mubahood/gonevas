@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.ProductActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/full_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:backgroundTint="@android:color/black"
+            android:visibility="gone">
+
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/full_image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleEnabled="false"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorEnabled="false"
+                app:sliderScrollTimeInSec="1"
+                app:sliderStartAutoCycle="false" />
+
+            <ImageButton
+                android:id="@+id/close_full_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:background="@drawable/shape_round"
+                android:backgroundTint="@color/grey_10"
+                android:gravity="center"
+                android:src="@drawable/ic_close"
+                android:tint="@color/grey_900" />
+
+        </FrameLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/details_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/product_photo_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:elevation="0dp"
+                    android:paddingLeft="@dimen/spacing_large"
+
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
+
+
+                    <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/imageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_collapseMode="parallax"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleEnabled="false"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorEnabled="false"
+                        app:sliderScrollTimeInSec="1"
+                        app:sliderStartAutoCycle="false" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/spacing_large"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_medium">
+
+                        <TextView
+                            android:id="@+id/single_product_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="150 CFA"
+                            android:textColor="@color/orange_900"
+                            android:textSize="@dimen/spacing_mlarge"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:paddingBottom="0dp"
+                            android:src="@drawable/icon_share" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/discount_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/spacing_large"
+                            android:paddingRight="@dimen/spacing_medium"
+                            android:text="300 CFA"
+                            android:textColor="@color/grey_800"
+                            android:textSize="@dimen/spacing_large"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/percentage_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-50% off"
+                            android:textColor="@color/grey_900" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/single_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:layout_marginBottom="@dimen/spacing_large"
+                        android:paddingLeft="@dimen/spacing_large"
+                        android:paddingRight="@dimen/spacing_large"
+                        android:text="@string/product_name_1"
+                        android:textColor="@color/grey_800"
+                        android:textSize="@dimen/spacing_large"
+                        android:textStyle="normal" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_large"
+                        android:background="@color/grey_80"
+                        android:backgroundTint="@color/grey_10" />
+
+                    <LinearLayout
+                        android:id="@+id/show_product_description_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/spacing_large"
+                        android:paddingTop="20dp"
+                        android:paddingRight="@dimen/spacing_large"
+                        android:paddingBottom="@dimen/spacing_large">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/icon_right"
+                            android:paddingRight="@dimen/spacing_medium"
+                            android:text="@string/product_details"
+                            android:textColor="@color/grey_900"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_large"
+                        android:background="@color/grey_80"
+                        android:backgroundTint="@color/grey_10" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/spacing_large">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/spacing_large"
+                            android:paddingRight="@dimen/spacing_medium"
+                            android:paddingBottom="@dimen/spacing_large"
+                            android:text="@string/related_products"
+                            android:textColor="@color/grey_900"
+                            android:textSize="14dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/related_products_recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/actionBarSize" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/add_to_cart_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey_10" />
+
+        <LinearLayout
+            android:id="@+id/check_out_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:onClick="open_whatsapp"
+                android:padding="@dimen/spacing_medium"
+                android:src="@drawable/icons_whatsapp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:background="@color/grey_10" />
+
+
+            <Button
+                android:id="@+id/checkout_button_container"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange_900"
+                android:text="CHECKOUT"
+                android:textColor="@android:color/white"
+                android:theme="@style/Button.Primary" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_to_cart_inner_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:onClick="open_whatsapp"
+                android:padding="@dimen/spacing_medium"
+                android:src="@drawable/icons_whatsapp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:background="@color/grey_10" />
+
+
+            <Button
+                android:id="@+id/call_seller"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange_900"
+                android:text="ACHETER"
+                android:textColor="@android:color/white"
+                android:theme="@style/Button.Primary" />
+
+
+            <Button
+                android:id="@+id/button_add_to_cart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/add_to_cart"
+                android:textColor="@color/white"
+                android:theme="@style/Button.Primary" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--bottom sheet container-->
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
